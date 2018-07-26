@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chart.js": "^2.7.2",
     "react": "^16.4.1",
+    "react-chartkick": "^0.2.1",
+    "react-d3-basic": "^1.6.11",
     "react-dom": "^16.4.1",
+    "react-google-charts": "^2.0.20",
     "react-scripts": "1.1.4",
     "semantic-ui-react": "^0.82.1"
   },
