@@ -6,22 +6,22 @@ import './App.css';
 
 class App extends Component {
   state = {
-    //events: []
-    events: [
-      {id: 1, name: "test1", fraud_probability: .2, classification: "low"},
-      {id: 2, name: "test2", fraud_probability: .9, classification: "high"},
-      {id: 3, name: "test3", fraud_probability: .5, classification: "medium"}
-    ]
+    events: []
+    // events: [
+    //   {id: 1, name: "test1", fraud_probability: .2, classification: "low"},
+    //   {id: 2, name: "test2", fraud_probability: .9, classification: "high"},
+    //   {id: 3, name: "test3", fraud_probability: .5, classification: "medium"}
+    // ]
   }
 
-//   componentDidMount = async () => {
-//   const eventsJSON = await fetch('http://localhost:3001/events')
-//   console.log(eventsJSON, 'eventsJSON')
-//   let events = await eventsJSON.json()
-//
-//   this.setState({events})
-//
-// }
+  componentDidMount = async () => {
+  const eventsJSON = await fetch('http://ec2-54-91-86-14.compute-1.amazonaws.com:3333/events')
+  console.log(eventsJSON, 'eventsJSON')
+  let events = await eventsJSON.json()
+
+  this.setState({events})
+
+}
 
 // fraudCounter (events) {
 //   let lowCount = 0;
